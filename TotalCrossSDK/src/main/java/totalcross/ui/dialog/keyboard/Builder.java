@@ -67,7 +67,9 @@ public class Builder extends Control {
       String text, Image img, int textPosition, int gap, EnumTipoBotao status) {
 
     Button button = new Button(text, img, textPosition, gap);
-
+    if(Settings.platform.equals(Settings.LINUX_ARM)) {
+      button.setDoEffect(false);
+    }
     if (BTN_REGULAR == status) {
       button.setFont(button.getFont().asBold());
       button.setBackForeColors(Color.getRGB(143, 152, 162), Color.WHITE);
