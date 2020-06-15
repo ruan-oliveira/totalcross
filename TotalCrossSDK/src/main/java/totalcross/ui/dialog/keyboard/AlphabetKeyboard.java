@@ -58,47 +58,82 @@ public class AlphabetKeyboard extends Container {
   public AlphabetKeyboard() {
     // First line
     btQ = new Button("Q");
+    btQ.setDoEffect(false);
     btW = new Button("W");
+    btW.setDoEffect(false);
     btE = new Button("E");
+    btE.setDoEffect(false);
     btR = new Button("R");
+    btR.setDoEffect(false);
     btT = new Button("T");
+    btT.setDoEffect(false);
     btY = new Button("Y");
+    btY.setDoEffect(false);
     btU = new Button("U");
+    btU.setDoEffect(false);
     btI = new Button("I");
+    btI.setDoEffect(false);
     btO = new Button("O");
+    btO.setDoEffect(false);
     btP = new Button("P");
+    btP.setDoEffect(false);
     // Second line
     btA = new Button("A");
+    btA.setDoEffect(false);
     btS = new Button("S");
+    btS.setDoEffect(false);
     btD = new Button("D");
+    btD.setDoEffect(false);
     btF = new Button("F");
+    btF.setDoEffect(false);
     btG = new Button("G");
+    btG.setDoEffect(false);
     btH = new Button("H");
+    btH.setDoEffect(false);
     btJ = new Button("J");
+    btJ.setDoEffect(false);
     btK = new Button("K");
+    btK.setDoEffect(false);
     btL = new Button("L");
+    btL.setDoEffect(false);
     // Third line
     btZ = new Button("Z");
+    btZ.setDoEffect(false);
     btX = new Button("X");
+    btX.setDoEffect(false);
     btC = new Button("C");
+    btC.setDoEffect(false);
     btV = new Button("V");
+    btV.setDoEffect(false);
     btB = new Button("B");
+    btB.setDoEffect(false);
     btN = new Button("N");
+    btN.setDoEffect(false);
     btM = new Button("M");
+    btM.setDoEffect(false);
     btComma = new Button(",");
+    btComma.setDoEffect(false);
     btPeriod = new Button(".");
+    btPeriod.setDoEffect(false);
     // Last line
     btSpace = new Button("             ");
+    btSpace.setDoEffect(false);
     btSlash = new Button("/");
+    btSlash.setDoEffect(false);
     btCase = new Button("[a]");
-
+    btCase.setDoEffect(false);
+    
     btn123 = new Button("?123");
+    btn123.setDoEffect(false);
     btCancel = new Button("Cancel");
+    btCancel.setDoEffect(false);
     try {
       int size = fmH * 3 / 2;
       btDel = new Button(new Image("totalcross/res/del.png").getSmoothScaledInstance(size, size));
     } catch (Exception e) {
       btDel = new Button("Del");
+    } finally {
+      btDel.setDoEffect(false);
     }
   }
 
