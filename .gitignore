@@ -62,5 +62,8 @@ build/
 #Android
 .externalNativeBuild
 TotalCrossVM/android/src/main/libs/armeabi/
-TotalCrossVM/android/.idea
 TotalCrossVM/android/app/src/main/assets/tcfiles\.zip
+
+/**/.idea
+*.iml
+TotalCrossVM/debugger/target
