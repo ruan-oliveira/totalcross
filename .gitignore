@@ -33,6 +33,7 @@ TotalCrossVM/builders/vc*/**/*.pdb
 TotalCrossVM/builders/vc*/**/*.lib
 TotalCrossVM/builders/vc*/**/*.dll
 
+
 # Files from vim
 .*.swp
 *.DS_Store
@@ -47,6 +48,7 @@ Breakpoints.xcbkptlist
 
 # Files from VS Code
 /**/.vs
+*.vscode
 
 #CMake
 build/
