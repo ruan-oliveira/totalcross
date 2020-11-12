@@ -319,7 +319,7 @@ void skia_drawText(int32 skiaSurface, const void *text, int32 chrCount, int32 x0
 {
     SKIA_TRACE()
 
-    const auto txtFont {SkFont(skia_getTypeface(typefaceIdx),fontSize)};
+    const auto txtFont {SkFont(skia_getTypeface(typefaceIndex),fontSize)};
     const auto txtBlob {SkTextBlob::MakeFromText(text,chrCount,txtFont,SkTextEncoding::kUTF16)};
     backPaint.setColor(foreColor);
     canvas->drawTextBlob(txtBlob,x0,y0,backPaint);
