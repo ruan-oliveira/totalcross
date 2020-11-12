@@ -47,6 +47,7 @@ Breakpoints.xcbkptlist
 
 # Files from VS Code
 /**/.vs
+*.vscode
 
 #CMake
 build/
